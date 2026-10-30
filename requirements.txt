@@ -1,0 +1,10 @@
+# Direct packages imported by the unchanged Google Colab notebook.
+# Original notebook reports TensorFlow 2.20.0; full reproducibility is not guaranteed.
+# Designed primarily for Google Colab (which also provides google.colab).
+tensorflow==2.20.0
+numpy
+pandas
+matplotlib
+scikit-learn
+opencv-python-headless
+Pillow

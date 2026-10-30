@@ -1,0 +1,26 @@
+# Data and training artifacts must not be committed
+archive.zip
+APTOS_extracted/
+APTOS_local/
+colored_images/
+train_images/
+CSE427_progress/
+training_backup/
+results/
+outputs/
+*.keras
+*.h5
+*.hdf5
+*.ckpt
+*.ckpt.index
+*.ckpt.data-*
+# Credentials / local Python files
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+secrets.json
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
