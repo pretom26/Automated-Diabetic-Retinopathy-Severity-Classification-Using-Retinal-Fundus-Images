@@ -63,8 +63,8 @@ The figures above were extracted from the notebook's saved outputs; other visual
 `Python` · `TensorFlow / Keras` · `ResNet50` · `scikit-learn` · `NumPy` · `Pandas` · `OpenCV` · `Pillow` · `Matplotlib` · `Google Colab`
 
 ## Project presentation
+[📄 View Project Presentation (PDF)](CSE427_Automated%20Diabetic%20Retinopathy%20Severity%20Classification.pdf)
 
-The slide deck can be added under [`slides/`](slides/) as a `.pptx` or `.pdf` file. Instructions for adding it without changing the existing notebook are in [`slides/README.md`](slides/README.md). The paper is being kept private for now.
 
 ## Limitations
 
