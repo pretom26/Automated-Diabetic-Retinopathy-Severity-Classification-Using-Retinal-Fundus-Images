@@ -46,49 +46,17 @@ The class imbalance remains important: No DR has stronger per-class performance 
 
 **Class distribution**
 
-![APTOS four-class distribution](assets/class_distribution.png)
+![APTOS four-class distribution](class_distribution.png)
 
 **Training and validation metrics**
 
-![ResNet50 training curves](assets/training_curves.png)
+![ResNet50 training curves](training_curves.png)
 
 **Held-out test confusion matrix**
 
-![Four-class confusion matrix](assets/confusion_matrix.png)
+![Four-class confusion matrix](confusion_matrix.png)
 
 The figures above were extracted from the notebook's saved outputs; other visualizations, including Grad-CAM examples, are available in the original notebook.
-
-## Repository structure
-
-```text
-.
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── GITHUB_UPLOAD_GUIDE.md
-├── notebooks/
-│   └── Automated_Diabetic_Retinopathy_Severity_Classification_Using_Retinal_Fundus_Images_By_Pretom_Areefin_Pranto_and_MD_Farhad_Hossain_Shishir.ipynb
-├── assets/
-│   ├── class_distribution.png
-│   ├── training_curves.png
-│   └── confusion_matrix.png
-└── slides/
-    └── README.md                 # Instructions for adding the presentation later
-```
-
-**The project paper is intentionally not included in this repository.** The presentation slides have not yet been supplied for inclusion.
-
-## Running the notebook in Google Colab
-
-[Open our original Colab notebook](https://colab.research.google.com/drive/1NGHfT5_-OZMIkW-h-oPCZcpi7QmuNWh5?usp=sharing)
-
-1. Open the Colab link above or upload the `.ipynb` file under [`notebooks/`](notebooks/) to Colab. Select a GPU runtime if available.
-2. Obtain the [APTOS 2019 dataset from Kaggle](https://www.kaggle.com/c/aptos2019-blindness-detection/data), subject to the dataset's terms. The notebook expects a **prepared 224 × 224 image archive**, not necessarily the raw Kaggle download. Within `archive.zip`, the expected files include `train.csv` (columns `id_code`, `diagnosis`) and `colored_images/`.
-3. Place the prepared `archive.zip` in a Google Drive folder accessible from the notebook.
-4. **Update `PROJECT_DIR`** inside the unchanged notebook to point to *your* Drive folder. It is set to the original project author's folder in both the dataset setup cell and the later Grad-CAM/recovery cell. This is a necessary local configuration step — the repository copy itself has not been edited.
-5. Run the notebook cells sequentially. It extracts the archive, copies the dataset into local Colab storage, trains the model, evaluates the held-out test set, and saves artifacts to the configured Drive project folder.
-
-**Reproducibility note:** Dataset preparation, GPU availability, package versions and model-training randomness can affect reruns. The model weights and full dataset are not included in the repository. `requirements.txt` lists direct imports; it does not guarantee exact reproduction of the original Colab runtime.
 
 ## Technologies
 
@@ -111,4 +79,4 @@ The slide deck can be added under [`slides/`](slides/) as a `.pptx` or `.pdf` fi
 - **Pretom Areefin Pranto** — BRAC University · [GitHub](https://github.com/pretom26)
 - **Md. Farhad Hossain Shishir** — BRAC University
 
-This is a **joint academic project**. No license is included by default; discuss open-source licensing and permissions with both contributors before applying one.
+This is a **joint academic project**.
